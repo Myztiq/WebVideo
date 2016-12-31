@@ -13,11 +13,4 @@ app.on('ready', () => {
 
   chatWindow = new BrowserWindow({width: 200, height: 200, parent: mainWindow, alwaysOnTop: true, transparent: true, frame: false})
   chatWindow.loadURL('https://appr.tc/')
-
-  mainWindow.on('closed', function() {
-    mainWindow = null
-  })
-  chatWindow.on('closed', function() {
-    chatWindow = null
-  })
 })
